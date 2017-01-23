@@ -90,6 +90,12 @@
         }
       };
       network = new vis.Network(container, data, options);
+      network.on("doubleClick", function (params) {
+        params.event = "[original event]";
+	if(params.nodes==4){
+		location.href =  "https://unicornsail.github.io/tank/.";
+	}
+    }
     }
   </script>
 </head>
