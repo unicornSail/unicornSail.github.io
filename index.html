@@ -90,10 +90,10 @@
         }
       };
       network = new vis.Network(container, data, options);
-      network.on("doubleClick", function (params) {
+      network.on("Click", function (params) {
         params.event = "[original event]";
 	if(params.nodes==4){
-		location.href =  "https://unicornsail.github.io/tank/.";
+		location.href =  "https://github.com/unicornSail";
 	}
     });
     }
