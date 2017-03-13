@@ -31,7 +31,7 @@
         {id: 1,  shape: 'image', image: DIR + '1.png'},
         {id: 2,  shape: 'image', image: DIR + '2.png'},
         {id: 3,  shape: 'image', image: DIR + '3.png'},
-        {id: 4,  shape: 'image', image: DIR + '4.jpg', label:"pictures by this guy!"},
+        {id: 4,  shape: 'image', image: DIR + '4.jpg', label:"pictures by this guy!Please double click."},
         {id: 5,  shape: 'image', image: DIR + '5.png'},
         {id: 6,  shape: 'image', image: DIR + '6.png'},
         {id: 7,  shape: 'image', image: DIR + '7.png'},
@@ -90,7 +90,7 @@
         }
       };
       network = new vis.Network(container, data, options);
-      network.on("Click", function (params) {
+      network.on("doubleClick", function (params) {
         params.event = "[original event]";
 	if(params.nodes==4){
 		location.href =  "https://github.com/unicornSail";
